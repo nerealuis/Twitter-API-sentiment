@@ -1,0 +1,67 @@
+I"S<h1 id="cómo-crear-una-cuenta-de-desarrollador-en-twitter">Cómo crear una cuenta de desarrollador en Twitter</h1>
+
+<p>Para trabajar con la API de Twitter te darás de alta en el programa de desarrolladores (developer program). Tras rellenar una serie de datos obtendrás dos claves únicas: API key, API token. Será necesario disponer de dichas claves para el correcto desarrollo del workshop.</p>
+
+<ol>
+  <li>
+    <p>Inicia sesión en tu cuenta de Twitter</p>
+  </li>
+  <li>
+    <p>Indica que quieres explorar la API, dentro de la categoría de “hobbies”</p>
+
+    <p><img src="assets/img/twitter_1.png" alt="alt text" title="Logo Title Text 1" /></p>
+  </li>
+  <li>
+    <p>Confirma tus datos y pulsa <em>Next</em></p>
+
+    <p><img src="assets/img/twitter_2.png" alt="albbbbt" title="Logo Title Text 2" /></p>
+  </li>
+  <li>
+    <p>Describe en inglés de forma general qué tareas llevarás a cabo utilizando el API de Twitter</p>
+
+    <ul>
+      <li><em>No copies el texto de ejemplo de forma literal. Indica que el objetivo es explorar el API para aplicar algoritmos de Machine Learning, realizar data-mining, análisis de sentimiento  o aprender a limpiar un dataset, por ejemplo.</em></li>
+    </ul>
+
+    <p><img src="assets/img/twitter_3.png" alt="ablabl" title="Logo Title Text 3" /></p>
+  </li>
+  <li>
+    <p>A la pregunta <em>Are you planning to analyze Twitter data” marca _Yes</em></p>
+
+    <p><img src="assets/img/twitter_4.png" alt="ablabl" title="Logo Title Text 4" /></p>
+  </li>
+  <li>
+    <p>Pon ejemplos de qué quieres analizar y cómo.</p>
+
+    <ul>
+      <li><em>No copies el texto de ejemplo de forma literal. Indica que estás interesado en analizar el sentimiento de un conjunto de tweets que puede ser obtenido por una serie de keywords o a través de un hashtag</em></li>
+    </ul>
+  </li>
+  <li>
+    <p>Desmarca la cuestión <em>Will your app use Tweet, Retweet, like, follow or Direct Message functionality</em> ya que no utilizaremos funcionalidades relacionadas con retweets ni mensajes directos ni likes en este workshop.</p>
+  </li>
+  <li>
+    <p>Acepta el acuerdo de desarrolladores</p>
+
+    <p><img src="assets/img/twitter_5.png" alt="ablabl" title="Logo Title Text 5" /></p>
+  </li>
+  <li>
+    <p>Verifica que te ha llegado un email y haz click en la confirmación del mismo</p>
+
+    <p><img src="assets/img/twitter_6.png" alt="ablabl" title="Logo Title Text 6" /></p>
+
+    <p><img src="assets/img/twitter_7.png" alt="ablabl" title="Logo Title Text 7" /></p>
+  </li>
+  <li>
+    <p>¡Enhorabuena! Ya tienes tu cuenta de desarrollador activada.</p>
+
+    <ul>
+      <li><em>Nota: Si no recibes esta respuesta en tu email, es posible que la verificación de tu cuenta de desarrollador vaya a tardar hasta 24h-48h en procesarse. Esto sucede cuando la descripción o detalles de la app se han redactado de la misma forma (copiado) en varias ocasiones o, a veces, si te acabas de crear el mismo día una cuenta de Twitter y aplicas a desarrollador.</em></li>
+    </ul>
+  </li>
+</ol>
+
+<p><a href="./twitter-app.html">Siguiente paso: Cómo obtener tus API keys de Twitter</a></p>
+
+<p><a href="./">Volver a inicio</a></p>
+:ET

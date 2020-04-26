@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Análisis de textos a través de Twitter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="por Nerea Luis @sailormerqury" />
+<meta property="og:description" content="por Nerea Luis @sailormerqury" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/","headline":"Análisis de textos a través de Twitter","name":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
+        <p>por Nerea Luis @sailormerqury</p>
+
+        
+          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
+        
+
+
+        
+
+        
+
+        
+        <ul class="downloads">
+          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
+          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
+          <li><a href="">Ver en <strong>GitHub</strong></a></li>
+        </ul>
+        
+      </header>
+      <section>
+
+      <h1 id="introducción">Introducción</h1>
+
+<p>Cualquier problema de Machine Learning (data-mining, text-analysis, sentiment-analysis…) contiene las siguientes fases:</p>
+
+<p><img src="assets/img/intro_1.png" alt="Pasos" title="Pasos" /></p>
+
+<h2 id="fuentes-de-datos">Fuentes de datos</h2>
+
+<p>Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados que se pueden encontrar en Internet</p>
+
+<p><a href="https://www.google.com/publicdata/directory">https://www.google.com/publicdata/directory</a></p>
+
+<p><a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
+
+<p><a href="https://www.reddit.com/r/datasets/">https://www.reddit.com/r/datasets/</a></p>
+
+<p><a href="https://datos.gob.es">https://datos.gob.es</a></p>
+
+<h1 id="qué-vamos-a-hacer">¿Qué vamos a hacer?</h1>
+
+<p>La primera parte del taller consistirá en desarrollar en codigo Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán <em>tweets</em> de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.</p>
+
+<p><img src="assets/img/intro_2.png" alt="Arquitectura básica" title="Arquitectura básica" /></p>
+
+<p>La segunda parte del taller consistirá en limpiar esos datos, trabajar con funciones básicas de Natural Language Processing y analizar el sentimiento de los tweets a través de librerías de Python como Textblob o MeaningCloud.</p>
+
+<h2 id="requisitos">Requisitos</h2>
+
+<ul>
+  <li>Python 3.6 o superior</li>
+  <li>Jupyter Notebooks (o Anaconda)</li>
+  <li>Editor de código o IDE</li>
+</ul>
+
+<p>Revisa tu(s) versión(es) instaladas de Python con el siguiente comando. Si tienes dos versiones diferentes instaladas, seguramente Python 3.6 esté asociado al segundo.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+python3 <span class="nt">--version</span>
+</code></pre></div></div>
+<p>Para saber dónde está instalada tu versión de Python escribe en la Terminal:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which python
+</code></pre></div></div>
+
+<h2 id="librerías-de-python">Librerías de Python</h2>
+
+<p>Las librerías recomendadas para este taller son las siguientes:</p>
+
+<ul>
+  <li>tweepy</li>
+  <li>pandas</li>
+  <li>csv</li>
+  <li>nltk</li>
+  <li>wordcloud</li>
+  <li>textblob</li>
+  <li>meaningCloud-python</li>
+</ul>
+
+<p>Puedes instalarlas con</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> &lt;nombre libreria&gt;
+</code></pre></div></div>
+
+<p>Revisa que están instaladas correctamente con el siguiente comando:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip list
+</code></pre></div></div>
+
+<h1 id="índice-de-contenidos">Índice de contenidos</h1>
+
+<ol>
+  <li>
+    <p><a href="./twitter-account.html">Cómo conseguir una cuenta de desarrollador en Twitter</a>.</p>
+  </li>
+  <li>
+    <p><a href="./twitter-app.html">Cómo crear tu primera app de Twitter</a>.</p>
+  </li>
+</ol>
+
+
+
+      </section>
+      <footer>
+        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
