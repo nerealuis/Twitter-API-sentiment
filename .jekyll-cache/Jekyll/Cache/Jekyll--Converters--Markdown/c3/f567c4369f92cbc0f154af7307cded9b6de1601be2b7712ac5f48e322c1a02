@@ -1,0 +1,19 @@
+I"�<h1 id="tipos-de-extracción-de-datos">Tipos de extracción de datos</h1>
+
+<h2 id="a-través-de-api">A través de API:</h2>
+
+<ul>
+  <li>Generalmente se necesitan claves únicas (API Keys)</li>
+  <li>Se hace una llamada a la función de la API para obtener datos</li>
+  <li>El retorno de la función devuelve un fichero JSON con la información</li>
+</ul>
+
+<h2 id="a-través-de-scrapping">A través de <em>Scrapping</em>:</h2>
+
+<ul>
+  <li>Requiere conocer la estructura de la web y estudiar los patrones que se repiten</li>
+  <li>Se debe desarrollar un parser para obtener la información</li>
+  <li>En determinados casos es ilegal</li>
+  <li>Hay que construir el formato del <em>output</em></li>
+</ul>
+:ET

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Análisis de textos a través de Twitter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="por Nerea Luis @sailormerqury" />
+<meta property="og:description" content="por Nerea Luis @sailormerqury" />
+<link rel="canonical" href="http://localhost:4000/pandas-csv.html" />
+<meta property="og:url" content="http://localhost:4000/pandas-csv.html" />
+<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/pandas-csv.html","headline":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
+        <p>por Nerea Luis @sailormerqury</p>
+
+        
+          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
+        
+
+
+        
+
+        
+
+        
+        <ul class="downloads">
+          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
+          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
+          <li><a href="">Ver en <strong>GitHub</strong></a></li>
+        </ul>
+        
+      </header>
+      <section>
+
+      <h1 id="jugando-con-pandas-y-ficheros-json-y-csv">Jugando con Pandas y ficheros JSON y .CSV</h1>
+
+<h2 id="el-fichero-csv">El fichero CSV</h2>
+<p>csv: 
+atributo &gt; valor
+1 atributo por columna</p>
+
+<h2 id="el-fichero-json">El fichero JSON</h2>
+
+<h2 id="introducción-a-pandas">Introducción a Pandas</h2>
+<p>Como en cualquier código Python, el primer paso es importar la librería que queremos utilizar</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</code></pre></div></div>
+
+<p>En Python, las estructuras llamadas diccionarios nos ayudan a estructurar información que esté compuesta por columnas y filas de información. En Pandas, la estructura que se acopla perfectamente a la de diccionario se llama DataFrame.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dict_</span> <span class="o">=</span> <span class="p">{</span><span class="s">'user'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'user_location'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'date_created'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'text'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'retweet_count'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'favorite_count'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'hashtags'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'user_mentions'</span><span class="p">:</span> <span class="p">[],</span> <span class="s">'urls'</span><span class="p">:</span> <span class="p">[]}</span>        
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dict_</span><span class="p">)</span>  
+
+</code></pre></div></div>
+
+<h3 id="checklist-para-una-correcta-extracción-de-información">Checklist para una correcta extracción de información</h3>
+
+<ul>
+  <li>Keywords, dominio, problema</li>
+  <li>Número de datos (instancias)</li>
+  <li>Atributos</li>
+  <li>Tipo de datos</li>
+  <li>Salida (si/no)</li>
+  <li>Idioma</li>
+  <li>Localización</li>
+  <li>Rango de fechas</li>
+  <li>Encoding: utf-8 (emojis)</li>
+</ul>
+
+<h3 id="volcar-la-información-a-un-fichero-csv">Volcar la información a un fichero .CSV</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_or_buf</span> <span class="o">=</span> <span class="s">"twitter_stream.csv"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">"a"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="center">
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">PROTIP: wanna get data from your Google Sheet into Python/R/etc? Don&#39;t mind if the data has a public link? It&#39;s as easy as this: <a href="https://t.co/DBlewp8XVF">pic.twitter.com/DBlewp8XVF</a></p>&mdash; Chris Holdgraf (@choldgraf) <a href="https://twitter.com/choldgraf/status/1141436794359046144?ref_src=twsrc%5Etfw">June 19, 2019</a></blockquote> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+
+<p><a href="./">Volver a inicio</a></p>
+
+
+      </section>
+      <footer>
+        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

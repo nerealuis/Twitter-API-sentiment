@@ -1,0 +1,25 @@
+I"Y<h1 id="tipos-de-extracción-de-datos">Tipos de extracción de datos</h1>
+
+<p>A la hora de trabajar con Machine Learning necesitamos crear nuestro dataset o conjunto de datos.</p>
+
+<p>Dependiendo de si nuestras fuentes de datos están estructuradas o no, el proceso de obtención y limpieza de datos será más o menos costoso.</p>
+
+<h2 id="a-través-de-api">A través de API:</h2>
+
+<p>Una Application Programming Interface (API) es un servicio, generalmente provisto por una empresa, para que utilicemos su plataforma y/o datos.</p>
+
+<ul>
+  <li>Generalmente se necesitan claves únicas (API Keys)</li>
+  <li>Se hace una llamada a la función de la API para obtener datos</li>
+  <li>Es muy común que recibamos la consulta o el resultado en formato JSON.</li>
+</ul>
+
+<h2 id="a-través-de-scrapping">A través de <em>Scrapping</em>:</h2>
+
+<ul>
+  <li>Requiere conocer la estructura de la web y estudiar los patrones que se repiten</li>
+  <li>Se debe desarrollar un parser para obtener la información</li>
+  <li>En determinados casos es ilegal</li>
+  <li>Hay que construir el formato del <em>output</em></li>
+</ul>
+:ET

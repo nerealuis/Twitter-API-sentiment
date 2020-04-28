@@ -1,12 +1,33 @@
-I"l<h1 id="introducción">Introducción</h1>
+I"�<h1 id="introducción">Introducción</h1>
 
 <p>Cualquier problema de Machine Learning (data-mining, text-analysis, sentiment-analysis…) contiene las siguientes fases:</p>
 
 <p><img src="assets/img/intro_1.png" alt="Pasos" title="Pasos" /></p>
 
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<h3 id="no-estructurados">No estructurados</h3>
+
+<p><img src="assets/img/intro_22.png" alt="Pasos" title="Fuentes de datos no estructuradas" /></p>
+
+<h3 id="estructurados">Estructurados</h3>
+
+<ul>
+  <li>
+    <p>CSV
+<img src="assets/img/intro_3.png" alt="Pasos" title="CSV" /></p>
+  </li>
+  <li>
+    <p>JSON
+<img src="assets/img/intro_4.png" alt="Pasos" title="JSON" /></p>
+  </li>
+</ul>
+
 <h2 id="fuentes-de-datos">Fuentes de datos</h2>
 
 <p>Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados que se pueden encontrar en Internet</p>
+
+<p><a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
 
 <p><a href="https://www.google.com/publicdata/directory">https://www.google.com/publicdata/directory</a></p>
 
@@ -18,7 +39,7 @@
 
 <h1 id="qué-vamos-a-hacer">¿Qué vamos a hacer?</h1>
 
-<p>La primera parte del taller consistirá en desarrollar en codigo Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán <em>tweets</em> de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.</p>
+<p>La primera parte del taller consistirá en desarrollar en código Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán <em>tweets</em> de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.</p>
 
 <p><img src="assets/img/intro_2.png" alt="Arquitectura básica" title="Arquitectura básica" /></p>
 
@@ -47,7 +68,7 @@ python3 <span class="nt">--version</span>
 <ul>
   <li>tweepy</li>
   <li>pandas</li>
-  <li>csv</li>
+  <li>python-csv</li>
   <li>nltk</li>
   <li>wordcloud</li>
   <li>textblob</li>
@@ -71,6 +92,26 @@ python3 <span class="nt">--version</span>
   <li>
     <p><a href="./twitter-app.html">Cómo crear tu primera app de Twitter</a>.</p>
   </li>
+  <li>
+    <p><a href="./intro-python.html">Intro Python</a></p>
+  </li>
+  <li>
+    <p><a href="./pandas-csv.html">Intro Pandas</a></p>
+  </li>
+  <li>
+    <p><a href="./extraccion-datos.html">Tipos de extracción de datos</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1G1G2MpUZDAIl91EEPX76sqOZWMdUxFLS/view?usp=sharing">Búsqueda simple</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1BwVY-fIG1nsu6KwewZNZRio5ZFu2CpSD/view?usp=sharing">Streaming</a></p>
+  </li>
+  <li>
+    <p><a href="https://colab.research.google.com/drive/1QfdVEejIknXRw-OTEmKHziRJkpvZU8Dy">Limpieza de textos</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1q3gVlWkd6bD_5lknXh5FkiiO0prBx7Og/view?usp=sharing">Sentiment</a></p>
+  </li>
 </ol>
-
 :ET

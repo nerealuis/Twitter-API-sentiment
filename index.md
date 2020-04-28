@@ -8,9 +8,26 @@ Cualquier problema de Machine Learning (data-mining, text-analysis, sentiment-an
 
 ![Pasos](assets/img/intro_1.png "Pasos")
 
+## Tipos de datos
+
+### No estructurados
+
+![Pasos](assets/img/intro_22.png "Fuentes de datos no estructuradas")
+
+### Estructurados
+
+* CSV
+![Pasos](assets/img/intro_3.png "CSV")
+
+* JSON
+![Pasos](assets/img/intro_4.png "JSON")
+
+
 ## Fuentes de datos
 
 Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados que se pueden encontrar en Internet
+
+[https://www.kaggle.com/datasets](https://www.kaggle.com/datasets)
 
 [https://www.google.com/publicdata/directory](https://www.google.com/publicdata/directory)
 
@@ -22,7 +39,7 @@ Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados 
 
 # ¿Qué vamos a hacer?
 
-La primera parte del taller consistirá en desarrollar en codigo Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán _tweets_ de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.
+La primera parte del taller consistirá en desarrollar en código Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán _tweets_ de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.
 
 ![Arquitectura básica](assets/img/intro_2.png "Arquitectura básica")
 
@@ -50,7 +67,7 @@ Las librerías recomendadas para este taller son las siguientes:
 
 * tweepy
 * pandas
-* csv
+* python-csv
 * nltk
 * wordcloud
 * textblob
@@ -72,4 +89,16 @@ pip list
 
 1. [Cómo crear tu primera app de Twitter](./twitter-app.html).
 
+1. [Intro Python](./intro-python.html)
 
+1. [Intro Pandas](./pandas-csv.html)
+
+1. [Tipos de extracción de datos](./extraccion-datos.html)
+
+1. [Búsqueda simple](https://drive.google.com/file/d/1G1G2MpUZDAIl91EEPX76sqOZWMdUxFLS/view?usp=sharing)
+
+1. [Streaming](https://drive.google.com/file/d/1BwVY-fIG1nsu6KwewZNZRio5ZFu2CpSD/view?usp=sharing)
+
+1. [Limpieza de textos](https://colab.research.google.com/drive/1QfdVEejIknXRw-OTEmKHziRJkpvZU8Dy)
+
+1. [Sentiment](https://drive.google.com/file/d/1q3gVlWkd6bD_5lknXh5FkiiO0prBx7Og/view?usp=sharing)
