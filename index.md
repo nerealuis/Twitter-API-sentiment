@@ -91,10 +91,11 @@ Para llevar a cabo este taller es necesario validarse como desarrollador dentro 
 
 	1. [Introducción a la minería de datos](./intro-textos.md)
 
-	1. [Búsqueda simple](https://drive.google.com/file/d/1G1G2MpUZDAIl91EEPX76sqOZWMdUxFLS/view?usp=sharing)
+		* Para abrir Google Collaboratory tienes que escoger abrir el siguiente documento con esa aplicación. Después crea una copia con Archivo > Guardar una copia en Drive y ya podrás comenzar a trabajar.
+	1. [Búsqueda simple](https://drive.google.com/file/d/1L4j4YpvIoaJ1TUgg2c-AEU8iAa5P2anb/view?usp=sharing)
 
-	1. [Búsqueda en tiempo real (Streaming)](https://drive.google.com/file/d/1BwVY-fIG1nsu6KwewZNZRio5ZFu2CpSD/view?usp=sharing)
+	1. [Búsqueda en tiempo real (Streaming)]
 
-	1. [Limpieza de textos y nube de palabras](https://colab.research.google.com/drive/1QfdVEejIknXRw-OTEmKHziRJkpvZU8Dy)
+	1. [Limpieza de textos y nube de palabras]
 
-	1. [Análisis del sentimiento](https://drive.google.com/file/d/1q3gVlWkd6bD_5lknXh5FkiiO0prBx7Og/view?usp=sharing)
+	1. [Análisis del sentimiento]
