@@ -87,11 +87,11 @@ Para llevar a cabo este taller es necesario validarse como desarrollador dentro 
 
 * **Durante la sesión en vivo**
 
-	1. [Presentación sobre Natural Language Processing](https://docs.google.com/presentation/d/1SiqhSGy1oeoDrtVvsHXXJ2yuLadsiSGp6FsYqCBf2yA/edit?usp=sharing)
+	1. [Presentación sobre Natural Language Processing](https://drive.google.com/file/d/1wCBZ2IvYbNmdbbepKVMKNORvAdNDGis6/view?usp=sharing)
 
 	1. [Introducción a la minería de datos](./intro-textos.md)
 
-		* Para abrir Google Collaboratory tienes que escoger abrir el siguiente documento con esa aplicación. Después crea una copia con Archivo > Guardar una copia en Drive y ya podrás comenzar a trabajar.
+		* Para abrir Google Collaboratory tienes que escoger abrir el siguiente documento con esa aplicación. Después crea una copia con _Archivo > Guardar una copia en Drive_ y podrás comenzar a trabajar.
 	1. [Búsqueda simple](https://drive.google.com/file/d/1L4j4YpvIoaJ1TUgg2c-AEU8iAa5P2anb/view?usp=sharing)
 
 	1. [Búsqueda en tiempo real (Streaming)]
