@@ -1,55 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Análisis de textos a través de Twitter" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="por Nerea Luis @sailormerqury" />
-<meta property="og:description" content="por Nerea Luis @sailormerqury" />
-<link rel="canonical" href="http://localhost:4000/pandas-csv.html" />
-<meta property="og:url" content="http://localhost:4000/pandas-csv.html" />
-<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
-<script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/pandas-csv.html","headline":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
-        <p>por Nerea Luis @sailormerqury</p>
-
-        
-          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
-        
-
-
-        
-
-        
-
-        
-        <ul class="downloads">
-          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
-          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
-          <li><a href="">Ver en <strong>GitHub</strong></a></li>
-        </ul>
-        
-      </header>
-      <section>
-
-      <h1 id="jugando-con-pandas-y-ficheros-json-y-csv">Jugando con Pandas y ficheros JSON y .CSV</h1>
+I"x!<h1 id="jugando-con-pandas-y-ficheros-json-y-csv">Jugando con Pandas y ficheros JSON y .CSV</h1>
 
 <p>Aprende la estructura de los ficheros CSV y JSON y cómo procesarlos utilizando la librería Pandas.</p>
 
@@ -69,9 +18,7 @@
 
 <h2 id="el-fichero-json">El fichero JSON</h2>
 
-<p>El significado de sus siglas es JavaScript Object Notation, o sea es un fichero que almacena estructuras de datos y objetos en el formato que define el lenguaje JavaScript.</p>
-
-<p>Seguramente los hayas visto y jugado con ellos si has trabajado con peticiones API o aplicaciones web. Es la forma que se ideó para enviar datos del servidor a la aplicación web. Tiene la siguiente estructura jerárquica:</p>
+<p>El significado de sus siglas es JavaScript Object Notation, o sea es un fichero que almacena estructuras de datos y objetos en el formato que define el lenguaje JavaScript. Seguramente los hayas visto y jugado con ellos si has trabajado con peticiones API o aplicaciones web. Es la forma que se ideó para enviar datos del servidor a la aplicación web. Tiene la siguiente estructura jerárquica:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"statuses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -92,9 +39,23 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Puedes leer y probar más en <a href="https://www.w3schools.com/js/js_json_objects.asp">W3 Schools JSON</a></p>
+<p><a href="https://www.w3schools.com/js/js_json_objects.asp">W3 Schools JSON</a></p>
 
-<p>Cualquier estructura JSON se puede iterar facilmente con Python para filtrar la cantidad de información recibida o generar una estructura nueva.</p>
+<h2 id="checklist-para-una-correcta-extracción-de-información">Checklist para una correcta extracción de información</h2>
+
+<ul>
+  <li><strong>Dominio</strong>: cuál es la base de conocimiento que necesito para abordar el problema (ej: conocimiento general, red social concreta, conocimiento técnico o científico)</li>
+  <li><em>Problema</em>:</li>
+  <li><em>Alcance</em></li>
+  <li><em>Número de datos (instancias)</em></li>
+  <li><em>Atributos</em></li>
+  <li><em>Tipo de datos</em></li>
+  <li><em>Salida (si/no)</em></li>
+  <li><em>Idioma</em></li>
+  <li><em>Localización</em></li>
+  <li><em>Rango de fechas</em></li>
+  <li><em>Encoding:</em> utf-8 (emojis)</li>
+</ul>
 
 <h2 id="introducción-a-pandas">Introducción a Pandas</h2>
 <p>Como en cualquier código Python, el primer paso es importar la librería que queremos utilizar</p>
@@ -102,7 +63,7 @@
 </code></pre></div></div>
 
 <ul>
-  <li><strong>Leer un CSV</strong></li>
+  <li>Leer un CSV</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">"tweets_def.csv"</span><span class="p">)</span> 
@@ -110,7 +71,7 @@
 </code></pre></div></div>
 
 <ul>
-  <li><strong>Averiguar el tipo de variable</strong></li>
+  <li>Averiguar el tipo de variable</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -119,7 +80,7 @@
 <p>El ejemplo anterior nos devolverá como respuesta  <code class="highlighter-rouge">pandas.core.frame.DataFrame</code></p>
 
 <ul>
-  <li><strong>Utilizar estructura diccionario</strong></li>
+  <li>Utilizar estructura diccionario</li>
 </ul>
 
 <p>En Python, las estructuras llamadas diccionarios nos ayudan a estructurar información que esté compuesta por columnas y filas de información. En Pandas, la estructura que se acopla perfectamente a la de diccionario se llama DataFrame.</p>
@@ -131,7 +92,7 @@
 </code></pre></div></div>
 
 <ul>
-  <li><strong>Volcar la información a un fichero .CSV</strong></li>
+  <li>Volcar la información a un fichero .CSV</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_or_buf</span> <span class="o">=</span> <span class="s">"twitter_stream.csv"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">"a"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span>
@@ -144,15 +105,4 @@
 </div>
 
 <p><a href="./">Volver a inicio</a></p>
-
-
-      </section>
-      <footer>
-        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="/assets/js/scale.fix.js"></script>
-    
-  </body>
-</html>
+:ET

@@ -1,0 +1,88 @@
+I"@<h1 id="qué-vamos-a-hacer">¿Qué vamos a hacer?</h1>
+
+<p>La primera parte del taller consistirá en desarrollar en código Python este diagrama básico de obtención de datos a través de Twitter. Los datos serán <em>tweets</em> de la red social y los recibiremos estructurados. Después los exportaremos a un fichero CSV.</p>
+
+<p><img src="assets/img/intro_2.png" alt="Arquitectura básica" title="Arquitectura básica" /></p>
+
+<p>La segunda parte del taller consistirá en limpiar esos datos, trabajar con funciones básicas de Natural Language Processing y analizar el sentimiento de los tweets a través de librerías de Python como Textblob o MeaningCloud.</p>
+
+<h2 id="requisitos">Requisitos</h2>
+
+<p>Este taller se puede llevar a cabo de dos formas: en cloud (opción Google o Azure) o en local (utilizando Jupyter Notebooks).</p>
+
+<ul>
+  <li>Las plataformas cloud han emulado notebooks iguales o equivalentes a los Jupyter Notebooks. Es por ello que en las sesiones que imparta en vivo utilizaré la plataforma de Google o Microsoft, dependiendo de los recursos disponibles de los interesados.</li>
+</ul>
+
+<p>Para llevar a cabo este taller en tu ordenador, en un entorno local, deberás instalar:</p>
+
+<ul>
+  <li>Python 3.5 o superior (si usas OS X o distribuciones de Linux es posible que ya lo tengas instalado)</li>
+  <li>Jupyter Notebooks (o Anaconda, que ya los incluye)</li>
+</ul>
+
+<p>También debes tener disponible un editor de código (SublimeText, Atom…) o IDE compatible con Python (Anaconda, Pycharm…).</p>
+
+<p>Revisa tu(s) versión(es) instaladas de Python con el siguiente comando. Si tienes dos versiones diferentes instaladas, seguramente Python 3.6 esté asociado al segundo.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
+python3 <span class="nt">--version</span>
+</code></pre></div></div>
+<p>Para saber dónde está instalada tu versión de Python escribe en la Terminal:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which python
+</code></pre></div></div>
+
+<h2 id="librerías-de-python">Librerías de Python</h2>
+
+<p>Las librerías recomendadas para este taller son las siguientes:</p>
+
+<ul>
+  <li>tweepy</li>
+  <li>pandas</li>
+  <li>python-csv</li>
+  <li>nltk</li>
+  <li>wordcloud</li>
+  <li>textblob</li>
+  <li>meaningCloud-python</li>
+</ul>
+
+<p>Puedes instalarlas con</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> &lt;nombre libreria&gt;
+</code></pre></div></div>
+
+<p>Revisa que están instaladas correctamente con el siguiente comando:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip list
+</code></pre></div></div>
+
+<h1 id="índice-de-contenidos">Índice de contenidos</h1>
+
+<ol>
+  <li>
+    <p><a href="./twitter-account.html">Cómo conseguir una cuenta de desarrollador en Twitter</a>.</p>
+  </li>
+  <li>
+    <p><a href="./twitter-app.html">Cómo crear tu primera app de Twitter</a>.</p>
+  </li>
+  <li>
+    <p><a href="./intro-python.html">Intro Python</a></p>
+  </li>
+  <li>
+    <p><a href="./pandas-csv.html">Intro Pandas</a></p>
+  </li>
+  <li>
+    <p><a href="./extraccion-datos.html">Tipos de extracción de datos</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1G1G2MpUZDAIl91EEPX76sqOZWMdUxFLS/view?usp=sharing">Búsqueda simple</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1BwVY-fIG1nsu6KwewZNZRio5ZFu2CpSD/view?usp=sharing">Streaming</a></p>
+  </li>
+  <li>
+    <p><a href="https://colab.research.google.com/drive/1QfdVEejIknXRw-OTEmKHziRJkpvZU8Dy">Limpieza de textos</a></p>
+  </li>
+  <li>
+    <p><a href="https://drive.google.com/file/d/1q3gVlWkd6bD_5lknXh5FkiiO0prBx7Og/view?usp=sharing">Sentiment</a></p>
+  </li>
+</ol>
+:ET

@@ -4,20 +4,75 @@ layout: default
 
 # Jugando con Pandas y ficheros JSON y .CSV
 
-## El fichero CSV
-csv: 
-atributo > valor
-1 atributo por columna
+Aprende la estructura de los ficheros CSV y JSON y cómo procesarlos utilizando la librería Pandas. 
 
+## El fichero CSV
+
+El significado de sus siglas equivale a "Comma Separated Value", o sea es un fichero en el que cada valor se separa por comas. En trabajos basados en datos, la fila 0 se utiliza para definir los atributos. Así, las columnas quedarán claramente representadas cuando esas comas hagan de separadores. 
+
+Aquí puedes ver un fichero CSV leído en texto plano:
+
+![CSV plano](assets/img/csv_2.png "CSV")
+
+
+Aquí puedes ver la versión que procesa Pandas:
+
+![CSV Pandas](assets/img/csv_1.png "CSV")
+
+El fichero CSV también se puede generar desde cero muy fácilmente con Pandas. 
 
 ## El fichero JSON
 
+El significado de sus siglas es JavaScript Object Notation, o sea es un fichero que almacena estructuras de datos y objetos en el formato que define el lenguaje JavaScript. 
+
+Seguramente los hayas visto y jugado con ellos si has trabajado con peticiones API o aplicaciones web. Es la forma que se ideó para enviar datos del servidor a la aplicación web. Tiene la siguiente estructura jerárquica:
+
+```json
+{
+  "statuses": [
+    {
+      "created_at": "Mon May 06 20:01:29 +0000 2019",
+      "id": 1125490788736032770,
+      "id_str": "1125490788736032770",
+      "text": "Today's new update means that you can finally add Pizza Cat to your Retweet with comments! Learn more about this ne… https://t.co/Rbc9TF2s5X",
+      "truncated": true,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      }
+    }
+  ]
+}
+```
+
+Puedes leer y probar más en [W3 Schools JSON](https://www.w3schools.com/js/js_json_objects.asp)
+
+Cualquier estructura JSON se puede iterar facilmente con Python para filtrar la cantidad de información recibida o generar una estructura nueva.  
 
 ## Introducción a Pandas
 Como en cualquier código Python, el primer paso es importar la librería que queremos utilizar
 ```python
 import pandas as pd
 ```
+
++ **Leer un CSV**
+
+```python
+data = pd.read_csv("tweets_def.csv") 
+data.head(10)
+```
+
++ **Averiguar el tipo de variable**
+
+```python
+type(data)
+```
+
+El ejemplo anterior nos devolverá como respuesta  `pandas.core.frame.DataFrame`
+
++ **Utilizar estructura diccionario**
 
 En Python, las estructuras llamadas diccionarios nos ayudan a estructurar información que esté compuesta por columnas y filas de información. En Pandas, la estructura que se acopla perfectamente a la de diccionario se llama DataFrame. 
 
@@ -28,26 +83,13 @@ df = pd.DataFrame(dict_)
 
 ```
 
-### Checklist para una correcta extracción de información
 
-* Keywords, dominio, problema
-* Número de datos (instancias)
-* Atributos
-* Tipo de datos
-* Salida (si/no)
-* Idioma
-* Localización
-* Rango de fechas
-* Encoding: utf-8 (emojis)
-
-
-### Volcar la información a un fichero .CSV
++ **Volcar la información a un fichero .CSV**
 
 
 ```python
 df.to_csv(path_or_buf = "twitter_stream.csv", mode="a", header=False, encoding="utf-8")
 ```
-
 
 
 <div class="center">

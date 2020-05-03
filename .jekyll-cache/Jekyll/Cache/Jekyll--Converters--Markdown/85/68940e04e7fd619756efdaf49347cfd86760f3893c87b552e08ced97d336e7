@@ -1,0 +1,39 @@
+I"<h1 id="introducción">Introducción</h1>
+
+<p>Cualquier problema de Machine Learning (data-mining, text-analysis, sentiment-analysis…) contiene las siguientes fases:</p>
+
+<p><img src="assets/img/intro_1.png" alt="Pasos" title="Pasos" /></p>
+
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<h3 id="no-estructurados">No estructurados</h3>
+
+<p><img src="assets/img/intro_22.png" alt="Pasos" title="Fuentes de datos no estructuradas" /></p>
+
+<h3 id="estructurados">Estructurados</h3>
+
+<ul>
+  <li>
+    <p>CSV
+<img src="assets/img/intro_3.png" alt="Pasos" title="CSV" /></p>
+  </li>
+  <li>
+    <p>JSON
+<img src="assets/img/intro_4.png" alt="Pasos" title="JSON" /></p>
+  </li>
+</ul>
+
+<h2 id="fuentes-de-datos">Fuentes de datos</h2>
+
+<p>Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados que se pueden encontrar en Internet</p>
+
+<p><a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
+
+<p><a href="https://www.google.com/publicdata/directory">https://www.google.com/publicdata/directory</a></p>
+
+<p><a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
+
+<p><a href="https://www.reddit.com/r/datasets/">https://www.reddit.com/r/datasets/</a></p>
+
+<p><a href="https://datos.gob.es">https://datos.gob.es</a></p>
+:ET

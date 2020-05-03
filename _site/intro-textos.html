@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Análisis de textos a través de Twitter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="por Nerea Luis @sailormerqury" />
+<meta property="og:description" content="por Nerea Luis @sailormerqury" />
+<link rel="canonical" href="http://localhost:4000/intro-textos.html" />
+<meta property="og:url" content="http://localhost:4000/intro-textos.html" />
+<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
+<script type="application/ld+json">
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/intro-textos.html","headline":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
+        <p>por Nerea Luis @sailormerqury</p>
+
+        
+          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
+        
+
+
+        
+
+        
+
+        
+        <ul class="downloads">
+          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
+          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
+          <li><a href="">Ver en <strong>GitHub</strong></a></li>
+        </ul>
+        
+      </header>
+      <section>
+
+      <h1 id="introducción">Introducción</h1>
+
+<p>Cualquier problema de Machine Learning (data-mining, text-analysis, sentiment-analysis…) contiene las siguientes fases:</p>
+
+<p><img src="assets/img/intro_1.png" alt="Pasos" title="Pasos" /></p>
+
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<h3 id="no-estructurados">No estructurados</h3>
+
+<p><img src="assets/img/intro_22.png" alt="Pasos" title="Fuentes de datos no estructuradas" /></p>
+
+<h3 id="estructurados">Estructurados</h3>
+
+<ul>
+  <li>
+    <p>CSV
+<img src="assets/img/intro_3.png" alt="Pasos" title="CSV" /></p>
+  </li>
+  <li>
+    <p>JSON
+<img src="assets/img/intro_4.png" alt="Pasos" title="JSON" /></p>
+  </li>
+</ul>
+
+<h2 id="checklist-para-una-correcta-extracción-de-información">Checklist para una correcta extracción de información</h2>
+
+<p>Para abordar un problema centrado en datos, como puede ser en este caso la minería de datos, debemos definir cada uno de los elementos que se describen a continuación. Esto evitará que el problema “se vaya de las manos” o que procesemos varias veces diferentes cantidades de datos porque no habíamos pensado al menos una estructura base sobre la que empezar a trabajar.</p>
+
+<ul>
+  <li><strong>Dominio</strong>: cuál es la base de conocimiento que necesito para abordar el problema (ej: conocimiento general, red social concreta, conocimiento técnico o científico)</li>
+  <li><strong>Problema</strong>: qué pretendo resolver o analizar con estos datos (ej: saber qué opinan mis clientes, la reputación de una marca, si ha gustado un capítulo de una serie…)</li>
+  <li><strong>Alcance</strong>: De quién provienen los datos, cómo se han generado y hasta dónde voy a analizarlos. Además, es recomendable definir también lo siguiente:
+    <ul>
+      <li><em>Idioma:</em> castellano, inglés, etc.</li>
+      <li><em>Localización:</em> ¿me vale cualquiera? ¿solo España?</li>
+      <li><em>Rango de fechas:</em> año actual, histórico, rango concreto…</li>
+    </ul>
+  </li>
+  <li><strong>Número de datos (instancias)</strong>: una estimación de cuántos datos necesito como mínimo para empezar a trabajar</li>
+  <li><strong>Atributos</strong>: qué necesito saber de cada instancia (datos de un cliente, información de un <em>tweet</em>, …)</li>
+  <li><strong>Tipo de datos</strong>: numéricos, categóricos, <em>booleanos</em>,…</li>
+  <li><strong>Encoding:</strong> soportar acentos, utf-8 (emojis), unicode, ISO,…</li>
+  <li><strong>Salida (si/no)</strong>: cuál es el objetivo (ej: conocer el sentimiento, clasificar perfiles,…)</li>
+</ul>
+
+<h2 id="fuentes-de-datos">Fuentes de datos</h2>
+
+<p>Algunos ejemplos gratuitos de fuentes de datos estructurados y no estructurados que se pueden encontrar en Internet</p>
+
+<p><a href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></p>
+
+<p><a href="https://www.google.com/publicdata/directory">https://www.google.com/publicdata/directory</a></p>
+
+<p><a href="https://registry.opendata.aws/">https://registry.opendata.aws/</a></p>
+
+<p><a href="https://www.reddit.com/r/datasets/">https://www.reddit.com/r/datasets/</a></p>
+
+<p><a href="https://datos.gob.es">https://datos.gob.es</a></p>
+
+<h2 id="tipos-de-extracción-de-datos">Tipos de extracción de datos</h2>
+
+<p>A la hora de trabajar con Machine Learning necesitamos crear nuestro dataset o conjunto de datos.</p>
+
+<p>Dependiendo de si nuestras fuentes de datos están estructuradas o no, el proceso de obtención y limpieza de datos será más o menos costoso.</p>
+
+<h3 id="a-través-de-api">A través de API:</h3>
+
+<p>Una Application Programming Interface (API) es un servicio, generalmente provisto por terceros, para que utilicemos su plataforma y/o datos.</p>
+
+<ul>
+  <li>Generalmente se necesitan claves únicas (API Keys)</li>
+  <li>Se hace una llamada a la función de la API para obtener datos</li>
+  <li>Es muy común que recibamos la consulta o el resultado en formato JSON.</li>
+</ul>
+
+<h3 id="a-través-de-scrapping">A través de <em>Scrapping</em>:</h3>
+
+<ul>
+  <li>Requiere conocer la estructura de la web y estudiar los patrones que se repiten</li>
+  <li>Se debe desarrollar un parser para obtener la información</li>
+  <li>En determinados casos es ilegal</li>
+  <li>Hay que construir el formato del <em>output</em></li>
+</ul>
+
+<p><a href="./">Volver a inicio</a></p>
+
+
+      </section>
+      <footer>
+        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

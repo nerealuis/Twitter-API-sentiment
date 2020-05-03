@@ -1,55 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Análisis de textos a través de Twitter" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="por Nerea Luis @sailormerqury" />
-<meta property="og:description" content="por Nerea Luis @sailormerqury" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
-<script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/","name":"Análisis de textos a través de Twitter","headline":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebSite","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
-        <p>por Nerea Luis @sailormerqury</p>
-
-        
-          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
-        
-
-
-        
-
-        
-
-        
-        <ul class="downloads">
-          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
-          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
-          <li><a href="">Ver en <strong>GitHub</strong></a></li>
-        </ul>
-        
-      </header>
-      <section>
-
-      <h1 id="qué-vamos-a-hacer">¿Qué vamos a hacer?</h1>
+I"�<h1 id="qué-vamos-a-hacer">¿Qué vamos a hacer?</h1>
 
 <p>La primera parte del taller consistirá en desarrollar en código Python este diagrama básico de obtención de datos JSON. Después los exportaremos a un fichero CSV.</p>
 
@@ -118,14 +67,11 @@ Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span 
 
 <h1 id="índice-de-contenidos-del-taller">Índice de contenidos del taller</h1>
 
-<p>Para llevar a cabo este taller es necesario validarse como desarrollador dentro de Twitter. Este proceso suele ser inmediato pero a veces puede tardar <strong>un par de días</strong>. Por ello, te pido que lo hagas con antelación. Una vez te concedan el acceso, crea una aplicación para poder comunicarnos con el API.</p>
+<p>Para llevar a cabo este taller es necesario validarse como desarrollador dentro de Twitter. Este proceso suele ser inmediato pero a veces puede tardar <strong>un par de días</strong>. Por ello, te pido que lo hagas con antelación. Una vez te concedan el acceso, crea una aplicación para poder comunicarnos con el API. <strong>No publicarás esa aplicación, sólo la utilizarás para obtener datos de la plataforma y explotarlos de forma privada.</strong></p>
 
 <ul>
   <li>
-    <p><em>El objetivo del taller no es publicar esa aplicación, sólo la utilizarás para obtener datos de la plataforma y explotarlos de forma privada.</em></p>
-  </li>
-  <li>
-    <p><strong>Trabajo previo</strong></p>
+    <p>Trabajo previo</p>
 
     <ol>
       <li>
@@ -143,7 +89,7 @@ Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span 
     </ol>
   </li>
   <li>
-    <p><strong>Durante la sesión en vivo</strong></p>
+    <p>Durante la sesión en vivo</p>
 
     <ol>
       <li>
@@ -167,15 +113,4 @@ Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span 
     </ol>
   </li>
 </ul>
-
-
-      </section>
-      <footer>
-        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="/assets/js/scale.fix.js"></script>
-    
-  </body>
-</html>
+:ET

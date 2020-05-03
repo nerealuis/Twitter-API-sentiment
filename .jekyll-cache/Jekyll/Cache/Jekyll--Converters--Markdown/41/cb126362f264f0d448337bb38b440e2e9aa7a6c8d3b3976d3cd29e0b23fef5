@@ -1,55 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Análisis de textos a través de Twitter | por Nerea Luis @sailormerqury</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Análisis de textos a través de Twitter" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="por Nerea Luis @sailormerqury" />
-<meta property="og:description" content="por Nerea Luis @sailormerqury" />
-<link rel="canonical" href="http://localhost:4000/pandas-csv.html" />
-<meta property="og:url" content="http://localhost:4000/pandas-csv.html" />
-<meta property="og:site_name" content="Análisis de textos a través de Twitter" />
-<script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar_nerea.png"}},"url":"http://localhost:4000/pandas-csv.html","headline":"Análisis de textos a través de Twitter","description":"por Nerea Luis @sailormerqury","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="http://localhost:4000/Twitter-API-sentiment">Análisis de textos a través de Twitter</a></h1>
-        <p>por Nerea Luis @sailormerqury</p>
-
-        
-          <img src="/assets/img/avatar_nerea.png" alt="Logo" />
-        
-
-
-        
-
-        
-
-        
-        <ul class="downloads">
-          <li><a href="">Descargar <strong>ZIP File</strong></a></li>
-          <li><a href="">Descargar <strong>TAR Ball</strong></a></li>
-          <li><a href="">Ver en <strong>GitHub</strong></a></li>
-        </ul>
-        
-      </header>
-      <section>
-
-      <h1 id="jugando-con-pandas-y-ficheros-json-y-csv">Jugando con Pandas y ficheros JSON y .CSV</h1>
+I"<'<h1 id="jugando-con-pandas-y-ficheros-json-y-csv">Jugando con Pandas y ficheros JSON y .CSV</h1>
 
 <p>Aprende la estructura de los ficheros CSV y JSON y cómo procesarlos utilizando la librería Pandas.</p>
 
@@ -96,6 +45,27 @@
 
 <p>Cualquier estructura JSON se puede iterar facilmente con Python para filtrar la cantidad de información recibida o generar una estructura nueva.</p>
 
+<h2 id="checklist-para-una-correcta-extracción-de-información">Checklist para una correcta extracción de información</h2>
+
+<p>Para abordar un problema centrado en datos, como puede ser en este caso la minería de datos, debemos definir cada uno de los elementos que se describen a continuación. Esto evitará que el problema “se vaya de las manos” o que procesemos varias veces diferentes cantidades de datos porque no habíamos pensado al menos una estructura base sobre la que empezar a trabajar.</p>
+
+<ul>
+  <li><strong>Dominio</strong>: cuál es la base de conocimiento que necesito para abordar el problema (ej: conocimiento general, red social concreta, conocimiento técnico o científico)</li>
+  <li><strong>Problema</strong>: qué pretendo resolver o analizar con estos datos (ej: saber qué opinan mis clientes, la reputación de una marca, si ha gustado un capítulo de una serie…)</li>
+  <li><strong>Alcance</strong>: De quién provienen los datos, cómo se han generado y hasta dónde voy a analizarlos. Además, es recomendable definir también lo siguiente:
+    <ul>
+      <li><em>Idioma:</em> castellano, inglés, etc.</li>
+      <li><em>Localización:</em> ¿me vale cualquiera? ¿solo España?</li>
+      <li><em>Rango de fechas:</em> año actual, histórico, rango concreto…</li>
+    </ul>
+  </li>
+  <li><strong>Número de datos (instancias)</strong>: una estimación de cuántos datos necesito como mínimo para empezar a trabajar</li>
+  <li><strong>Atributos</strong>: qué necesito saber de cada instancia (datos de un cliente, información de un <em>tweet</em>, …)</li>
+  <li><strong>Tipo de datos</strong>: numéricos, categóricos, <em>booleanos</em>,…</li>
+  <li><strong>Salida (si/no)</strong>: cuál es el objetivo (ej: conocer el sentimiento, clasificar perfiles,…)</li>
+  <li><strong>Encoding:</strong> soportar acentos, utf-8 (emojis), unicode, ISO,…</li>
+</ul>
+
 <h2 id="introducción-a-pandas">Introducción a Pandas</h2>
 <p>Como en cualquier código Python, el primer paso es importar la librería que queremos utilizar</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
@@ -131,7 +101,7 @@
 </code></pre></div></div>
 
 <ul>
-  <li><strong>Volcar la información a un fichero .CSV</strong></li>
+  <li>Volcar la información a un fichero .CSV</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_or_buf</span> <span class="o">=</span> <span class="s">"twitter_stream.csv"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s">"a"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span>
@@ -144,15 +114,4 @@
 </div>
 
 <p><a href="./">Volver a inicio</a></p>
-
-
-      </section>
-      <footer>
-        <p> Proyecto mantenido por <a href="https://github.com/nerealuis/">Nerea Luis</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="/assets/js/scale.fix.js"></script>
-    
-  </body>
-</html>
+:ET
