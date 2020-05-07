@@ -94,8 +94,8 @@ Para llevar a cabo este taller es necesario validarse como desarrollador dentro 
 		* Para abrir Google Collaboratory tienes que escoger abrir el siguiente documento con esa aplicación. Después crea una copia con _Archivo > Guardar una copia en Drive_ y podrás comenzar a trabajar.
 	1. [Búsqueda simple](https://drive.google.com/file/d/1L4j4YpvIoaJ1TUgg2c-AEU8iAa5P2anb/view?usp=sharing)
 
-	1. [Búsqueda en tiempo real (Streaming)]
+	1. [Búsqueda en tiempo real (Streaming)](https://drive.google.com/file/d/1aP_l64NMGmOZbsayarx-izUFxqeZssuA/view?usp=sharing)
 
-	1. [Limpieza de textos y nube de palabras]
+	1. [Limpieza de textos y nube de palabras](https://colab.research.google.com/drive/1QfdVEejIknXRw-OTEmKHziRJkpvZU8Dy?usp=sharing)
 
-	1. [Análisis del sentimiento]
+	1. [Análisis del sentimiento](https://drive.google.com/file/d/1kS2rw-pfknB52Qas_JU-fFAUREl_GUtY/view?usp=sharing)
